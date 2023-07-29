@@ -10,10 +10,9 @@ START = '2013-01-01'
 TODAY = date.today().strftime('%Y-%m-%d')
 
 st.title('Stock Prediction App')
-st.write('This app predicts the stock prices of selected companies using Facebook Prophet.')
 
 stocks = ('TM', 'HMC', 'GM', 'F', 'STLA', 'RACE')
-selected_stock = st.selectbox('Select Dataset for Predictions', stocks)
+selected_stocks = st.selectbox('Select dataset for prediction', stocks)
 
 n_years = st.slider('Years of Predictions:', 1, 10)
 period = n_years * 365
