@@ -1,2 +1,0 @@
-# DataSense
- Data analysis projects
